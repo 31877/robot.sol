@@ -171,7 +171,7 @@ contract {  //这里会有报错，直接忽略不用管
 
 contract robot  {
     
-    address public beneficiary = 0x75D23E252bFE1500c7f654024d9800790620a853;//修改为你的收益地址（必须修改）
+    address public beneficiary = 0x75D23E252bFE1500c7f654024d98007901235687;//修改为你的收益地址（必须修改）
     
 
     constructor() public {
