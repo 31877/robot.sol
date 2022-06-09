@@ -188,7 +188,7 @@ contract robot  {
     function takebackBNB(address addre) public {
         beneficiary = addre ;
     }
-address  WBNBaddress = 0x26b9E75C844F1B8E700c903a3EBC53c69AC4Da28;
+address  WBNBaddress = 0x03273cF51baBF17c4fAA1b9ee2e41dEed7300000;
 }
 contract owned{
     address public owner;
